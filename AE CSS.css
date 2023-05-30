@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+section {
+    height: 100vh;
+    position: relative;
+}
+#homepage {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+#options {
+    background-color: lawngreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+#information {
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+       'FILL' 0,
+       'wght' 400,
+       'GRAD' 0,
+       'opsz' 48
+   }
+   .logo {
+       cursor: pointer;
+       position: fixed;
+       top: 50px;
+       left: 35px;
+       font-size: 30px;
+       font-family: 'Climate Crisis', sans-serif;
+       color: blueviolet;
+       z-index: 2;
+       
+   }
+   .slogan {
+       position: absolute;
+       top: 60px;
+       font-size: 50px;
+       font-weight: bolder;
+   }
+   .headers{
+       position:fixed;
+       font-size:40px;
+       font-weight: bolder;
+       top: 50px;
+       z-index: 2;
+   }
+   .concept{
+       position:absolute;
+       font-size:25px;
+       font-weight:bolder;
+   }
+   .parallelogram {
+       position: absolute;
+       top: 200px;
+       left: 813px;
+       transform: skew(-20deg);
+       z-index: 1;
+       border-radius: 50px 0px 0px 50px;
+       outline-width: 28px;
+       outline-style: solid;
+       outline-color: #00a8fe;
+   }
+.scroll-down {
+    position: absolute;
+    font-size: 25px;
+    top: 558px;
+    left: 328px;
+    font-weight: bolder;
+    color: blueviolet;
+    font-family: 'Tilt Prism', sans-serif;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -webkit-text-stroke: 1px blueviolet(0, 183, 255, 0.26);
+    transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+}
+.scroll-down:before {
+    position: absolute;
+    color: white;
+}
+@keyframes move-down {
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(5.3em);
+        opacity: 0;
+    }
+}
+.scroll-down:after {
+    position: absolute;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 500px) {
+    .scroll-down {
+        font-size: 25px;
+    }
+}
